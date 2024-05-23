@@ -1,10 +1,10 @@
 {
-    "productos":[
-        {
-            "nombre":"Capitan America",
-            "precio":"12.00",
-            "imagen":"https://i.pinimg.com/736x/5d/13/58/5d1358223ae9cf7e8f1121cacac3b167.jpg",
-            "id": "1"
-        }
-    ]
+  "productos": [
+    {
+      "id": "6708b50c-abd3-4def-823a-21ed4828c764",
+      "nombre": "Jose ",
+      "precio": "25",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpT2NqYT36SetHc6LcZMh216Djow2wdlMBs0WDyGsO3Q&s"
+    }
+  ]
 }

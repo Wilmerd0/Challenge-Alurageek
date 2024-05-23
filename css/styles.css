@@ -46,6 +46,10 @@ main{
     padding-right: 3px;
 }
   
+.card img{
+    width: 176px;
+    height: 174px;
+}
 .price {
     color: grey;
     font-size: 16px;

@@ -1,28 +1,24 @@
-import { conexionAPI } from "./conexionAPI.js";
+export function crearCard (nombre,precio,imagen,id, callback){
+    const productoPadre = document.createElement("div");
+    const boton = document.createElement("button");
+    boton.textContent = "remove";
+    boton.id = id;
 
-const lista = document.querySelector("[data-lista]");
-
-function crearCard (nombre,precio,imagen){
-    const producto = document.createElement("div");
-    producto.className="card";
-    producto.innerHTML=`
+    productoPadre.className="card";
+    productoPadre.innerHTML=`
     <img src="${imagen}" alt="${nombre}">
     <h2>${nombre}</h2>
-    <p class="price">$${precio}</p>
-    <p><button>Remove</button></p>`;
-    
-    console.log(producto);
-    return producto;
+    <p class="price">$${precio}</p>`;
+    productoPadre.appendChild(boton)
+    boton.onclick = () => callback(id)
 
+    return productoPadre;
 }
 
-
-async function listarProductos(){
-    const listaAPI = await conexionAPI.listarProductos()
-
-    console.log(listaAPI)
-
-    listaAPI.forEach(producto => lista.appendChild(crearCard(producto.nombre,producto.precio,producto.imagen)));
+export async function listarProductos(listaReference, lista, callback){
+    if(lista.length == 0) {
+        listaReference.innerHTML=`<h2 style="font-size:28px; margin: auto; padding: 25px">No se encuentran productos</h2>`
+        return;
+    }
+    lista.forEach(({nombre,precio,imagen,id}) => listaReference.appendChild(crearCard(nombre,precio,imagen,id, callback)));
 }
-
-listarProductos()
