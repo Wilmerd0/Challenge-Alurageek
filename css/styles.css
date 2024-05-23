@@ -1,0 +1,135 @@
+*{
+    font-family: Arial, sans-serif; 
+}
+
+header{
+    background-color: #5D04D9;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#productos{
+    width: 55%;
+}
+#productos,#formulario{
+    margin-left: 40px;
+    margin-top: 100px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* CARDS */
+
+.card_container{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    box-shadow: -8px 8px 8px 2px gray;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    max-width: 200px;
+    height: 285px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-right: 3px;
+}
+  
+.price {
+    color: grey;
+    font-size: 16px;
+    padding: 4px 0 4px 0;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
+/* FORM */
+
+#formulario{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1{
+    padding-bottom: 25px;
+}
+
+input[type="text"], input[type="number"]{
+    width: 300px;
+    padding: 13px;
+    margin: 15px 0;
+    border: 2px solid #000080;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #000080;
+    color: white;
+}
+.reset-btn {
+    background-color: white;
+    color: #000080;
+    border: 2px solid #000080;
+}
+
+
+/* FOOTER */
+
+footer{
+    height: 232px;
+    background-color: #5D04D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+/* @media (min-width: 768px) {
+    .card_container{
+        overflow-x: none;
+    }
+} */

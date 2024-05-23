@@ -1,0 +1,10 @@
+{
+    "productos":[
+        {
+            "nombre":"Capitan America",
+            "precio":"12.00",
+            "imagen":"https://i.pinimg.com/736x/5d/13/58/5d1358223ae9cf7e8f1121cacac3b167.jpg",
+            "id": "1"
+        }
+    ]
+}

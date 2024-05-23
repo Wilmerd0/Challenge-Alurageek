@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+        <title>challenge AluraGeek</title>
+</head>
+<body>
+    <header>
+        <img src="./Images/Logo.svg" alt="Logo AluraGeek">
+    </header>
+    <main>
+        <section id="formulario">
+            <div class="container">
+                <h1>AGREGAR PRODUCTO:</h1>
+                <form data-formulario>
+                    <input type="text" name="nombre" placeholder="nombre..." data-nombre><br>
+                    <input type="number" name="precio" placeholder="precio..." data-precio><br>
+                    <input type="text" name="imagen" placeholder="imagen..." data-imagen><br>
+                    <button class="submit-btn">Enviar</button>
+                    <button type="reset" class="reset-btn">Limpiar</button>
+                </form>
+            </div>
+        </section>
+        <section id="productos">
+            <h1>MIS PRODUCTOS:</h1>
+            <div class="card_container" data-lista>
+                <div class="card">
+                    <img src="./Images/Ejemplo.svg" alt="Card">
+                    <h2>Producto-name</h2>
+                    <p class="price">$19.99</p>
+                    <p><button>Remove</button></p>
+                </div>
+                <div class="card">
+                    <img src="./Images/Ejemplo.svg" alt="Card">
+                    <h2>Producto-name</h2>
+                    <p class="price">$19.99</p>
+                    <p><button>Remove</button></p>
+                </div>
+                <div class="card">
+                    <img src="./Images/Ejemplo.svg" alt="Card">
+                    <h2>Producto-name</h2>
+                    <p class="price">$19.99</p>
+                    <p><button>Remove</button></p>
+                </div>
+                <div class="card">
+                    <img src="./Images/Ejemplo.svg" alt="Card">
+                    <h2>Producto-name</h2>
+                    <p class="price">$19.99</p>
+                    <p><button>Remove</button></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="./Images/Logo.svg" alt="Logo AluraGeek">
+        <p>DESARROLLADO POR WILMER DIAZ</p>
+        <P>ALURA LATAM - 2024</P>
+    </footer>
+    <script src="./js/agregar_producto.js" type="module"></script>
+</body>
+</html>
